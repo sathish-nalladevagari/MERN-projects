@@ -1,1 +1,1 @@
-export const BACKEND_URL = "https://imdb-filter.vercel.app/"
+export const BACKEND_URL = "http://localhost:8888/movies/"
