@@ -5,14 +5,15 @@ dotenv.config()
 import movieRoute from "./routes/movieRoute.js";
 import cors from "cors"
 
+
 const app = express()
 app.use(cors())
 
 app.use("/",movieRoute)
 
-app.get("/",(req,res)=>{
-    res.status(200).json("Welcome to IMDB Filter")
-})
+
+app.use(express.static("dist"))
+
 
 mongoose.connect(process.env.MONGOURI)
 .then(()=>{
