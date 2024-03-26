@@ -1,6 +1,5 @@
 import express from "express";
 import dotenv from 'dotenv';
-import { Movies } from "./models/movieModel.js";
 import mongoose from "mongoose";
 dotenv.config()
 import movieRoute from "./routes/movieRoute.js";
@@ -10,6 +9,10 @@ const app = express()
 app.use(cors())
 
 app.use("/",movieRoute)
+
+app.get("/",(req,res)=>{
+    res.status(200).json("Welcome to IMDB Filter")
+})
 
 mongoose.connect(process.env.MONGOURI)
 .then(()=>{
