@@ -4,8 +4,10 @@ import { Movies } from "./models/movieModel.js";
 import mongoose from "mongoose";
 dotenv.config()
 import movieRoute from "./routes/movieRoute.js";
+import cors from "cors"
 
 const app = express()
+app.use(cors())
 
 app.use("/",movieRoute)
 
