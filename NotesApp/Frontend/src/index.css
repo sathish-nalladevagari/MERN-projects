@@ -24,4 +24,8 @@
   .btn-primary{
     @apply w-full text-sm bg-primary text-white p-2 rounded mb-4 hover:bg-blue-600
   }
+  
+  .input-label {
+    @apply text-sm text-slate-400
+  }
 }
