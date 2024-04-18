@@ -1,0 +1,31 @@
+Todays project
+
+ --- Nodejs App using mongodb - CRUD operations
+  express, mongoose, jsonwebtoken, cors, nodemon
+
+ ---Register 
+   1. get data
+   2. checking if the data is exits
+   3. create User model
+   4. check if the user exits in the database   
+   5. save the user in our database
+   6. give response 
+
+done
+
+--- Login
+
+--- Authenticate the user
+
+--creating a todo
+
+--getting the all todos in our todos.
+
+
+--edit the todo
+
+-- delete the todo
+    --
+
+
+    --superchat 9346626687
